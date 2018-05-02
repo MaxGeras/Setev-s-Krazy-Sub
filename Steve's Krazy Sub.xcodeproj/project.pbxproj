@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5053278020959F410068633E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053277520959F410068633E /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5053278120959F410068633E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053277720959F410068633E /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5053278220959F410068633E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053277920959F410068633E /* FMDatabasePool.m */; };
+		5053278320959F410068633E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053277B20959F410068633E /* FMDatabaseQueue.m */; };
+		5053278420959F410068633E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053277E20959F410068633E /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5053278520959F410068633E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5053277F20959F410068633E /* Info.plist */; };
+		505F605020956D44002BE80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F604F20956D44002BE80C /* AppDelegate.swift */; };
+		505F605220956D44002BE80C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F605120956D44002BE80C /* ViewController.swift */; };
+		505F605520956D44002BE80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F605320956D44002BE80C /* Main.storyboard */; };
+		505F605720956D44002BE80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F605620956D44002BE80C /* Assets.xcassets */; };
+		505F605A20956D44002BE80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F605820956D44002BE80C /* LaunchScreen.storyboard */; };
+		505F606520956D44002BE80C /* Steve_s_Krazy_SubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F606420956D44002BE80C /* Steve_s_Krazy_SubTests.swift */; };
+		505F607020956D44002BE80C /* Steve_s_Krazy_SubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F606F20956D44002BE80C /* Steve_s_Krazy_SubUITests.swift */; };
+		505F607E209578AC002BE80C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F607D209578AC002BE80C /* SignUpViewController.swift */; };
+		505F6080209579A3002BE80C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F607F209579A3002BE80C /* User.swift */; };
+		508D74082096C43A005B4718 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D74072096C43A005B4718 /* SignInViewController.swift */; };
+		50A668D720967BFE00BC5E77 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A668D620967BFE00BC5E77 /* SQLiteDatabase.swift */; };
+		50DF4E2F20959791007EAF54 /* fmdb in Resources */ = {isa = PBXBuildFile; fileRef = 50DF4E2E20959791007EAF54 /* fmdb */; };
+		50DF4E332095990A007EAF54 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DF4E322095990A007EAF54 /* AVFoundation.framework */; };
+		50DF4E352095991B007EAF54 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DF4E342095991B007EAF54 /* AVKit.framework */; };
+		50DF4E3920959956007EAF54 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DF4E3820959956007EAF54 /* libsqlite3.0.tbd */; };
+		50FAB56F2095A97B00B9C9B8 /* FMDBDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 50FAB56E2095A97B00B9C9B8 /* FMDBDatabase.sqlite */; };
+		50FAB5712095AAAD00B9C9B8 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FAB5702095AAAD00B9C9B8 /* Util.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		505F606120956D44002BE80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505F604420956D44002BE80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505F604B20956D44002BE80C;
+			remoteInfo = "Steve's Krazy Sub";
+		};
+		505F606C20956D44002BE80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505F604420956D44002BE80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505F604B20956D44002BE80C;
+			remoteInfo = "Steve's Krazy Sub";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5053277420959F410068633E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		5053277520959F410068633E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		5053277620959F410068633E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		5053277720959F410068633E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		5053277820959F410068633E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		5053277920959F410068633E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		5053277A20959F410068633E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		5053277B20959F410068633E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		5053277C20959F410068633E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		5053277D20959F410068633E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		5053277E20959F410068633E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		5053277F20959F410068633E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505327872095A01B0068633E /* FMDBdatabase_sql.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBdatabase_sql.h; sourceTree = "<group>"; };
+		505F604C20956D44002BE80C /* Steve's Krazy Sub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steve's Krazy Sub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		505F604F20956D44002BE80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		505F605120956D44002BE80C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		505F605420956D44002BE80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		505F605620956D44002BE80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505F605920956D44002BE80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		505F605B20956D44002BE80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505F606020956D44002BE80C /* Steve's Krazy SubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steve's Krazy SubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		505F606420956D44002BE80C /* Steve_s_Krazy_SubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steve_s_Krazy_SubTests.swift; sourceTree = "<group>"; };
+		505F606620956D44002BE80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505F606B20956D44002BE80C /* Steve's Krazy SubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steve's Krazy SubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		505F606F20956D44002BE80C /* Steve_s_Krazy_SubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steve_s_Krazy_SubUITests.swift; sourceTree = "<group>"; };
+		505F607120956D44002BE80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505F607D209578AC002BE80C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		505F607F209579A3002BE80C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		508D74072096C43A005B4718 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		50A668D620967BFE00BC5E77 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		50DF4E2E20959791007EAF54 /* fmdb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fmdb; path = "/Users/Max/Desktop/Steve's Krazy Sub/Steve's Krazy Sub/fmdb"; sourceTree = "<absolute>"; };
+		50DF4E322095990A007EAF54 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50DF4E342095991B007EAF54 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		50DF4E3620959936007EAF54 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		50DF4E3820959956007EAF54 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		50FAB56E2095A97B00B9C9B8 /* FMDBDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FMDBDatabase.sqlite; sourceTree = "<group>"; };
+		50FAB5702095AAAD00B9C9B8 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		505F604920956D44002BE80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DF4E3920959956007EAF54 /* libsqlite3.0.tbd in Frameworks */,
+				50DF4E352095991B007EAF54 /* AVKit.framework in Frameworks */,
+				50DF4E332095990A007EAF54 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505F605D20956D44002BE80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505F606820956D44002BE80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5053277320959F410068633E /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				5053277420959F410068633E /* FMDatabase.h */,
+				5053277520959F410068633E /* FMDatabase.m */,
+				5053277620959F410068633E /* FMDatabaseAdditions.h */,
+				5053277720959F410068633E /* FMDatabaseAdditions.m */,
+				5053277820959F410068633E /* FMDatabasePool.h */,
+				5053277920959F410068633E /* FMDatabasePool.m */,
+				5053277A20959F410068633E /* FMDatabaseQueue.h */,
+				5053277B20959F410068633E /* FMDatabaseQueue.m */,
+				5053277C20959F410068633E /* FMDB.h */,
+				5053277D20959F410068633E /* FMResultSet.h */,
+				5053277E20959F410068633E /* FMResultSet.m */,
+				5053277F20959F410068633E /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		505F604320956D44002BE80C = {
+			isa = PBXGroup;
+			children = (
+				50FAB56E2095A97B00B9C9B8 /* FMDBDatabase.sqlite */,
+				505327872095A01B0068633E /* FMDBdatabase_sql.h */,
+				505F604E20956D44002BE80C /* Steve's Krazy Sub */,
+				505F606320956D44002BE80C /* Steve's Krazy SubTests */,
+				505F606E20956D44002BE80C /* Steve's Krazy SubUITests */,
+				505F604D20956D44002BE80C /* Products */,
+				50DF4E312095990A007EAF54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		505F604D20956D44002BE80C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				505F604C20956D44002BE80C /* Steve's Krazy Sub.app */,
+				505F606020956D44002BE80C /* Steve's Krazy SubTests.xctest */,
+				505F606B20956D44002BE80C /* Steve's Krazy SubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		505F604E20956D44002BE80C /* Steve's Krazy Sub */ = {
+			isa = PBXGroup;
+			children = (
+				505F604F20956D44002BE80C /* AppDelegate.swift */,
+				50FAB5702095AAAD00B9C9B8 /* Util.swift */,
+				505F605120956D44002BE80C /* ViewController.swift */,
+				505F605320956D44002BE80C /* Main.storyboard */,
+				505F605620956D44002BE80C /* Assets.xcassets */,
+				505F605820956D44002BE80C /* LaunchScreen.storyboard */,
+				505F605B20956D44002BE80C /* Info.plist */,
+				505F607D209578AC002BE80C /* SignUpViewController.swift */,
+				505F607F209579A3002BE80C /* User.swift */,
+				5053277320959F410068633E /* fmdb */,
+				50A668D620967BFE00BC5E77 /* SQLiteDatabase.swift */,
+				508D74072096C43A005B4718 /* SignInViewController.swift */,
+			);
+			path = "Steve's Krazy Sub";
+			sourceTree = "<group>";
+		};
+		505F606320956D44002BE80C /* Steve's Krazy SubTests */ = {
+			isa = PBXGroup;
+			children = (
+				505F606420956D44002BE80C /* Steve_s_Krazy_SubTests.swift */,
+				505F606620956D44002BE80C /* Info.plist */,
+			);
+			path = "Steve's Krazy SubTests";
+			sourceTree = "<group>";
+		};
+		505F606E20956D44002BE80C /* Steve's Krazy SubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				505F606F20956D44002BE80C /* Steve_s_Krazy_SubUITests.swift */,
+				505F607120956D44002BE80C /* Info.plist */,
+			);
+			path = "Steve's Krazy SubUITests";
+			sourceTree = "<group>";
+		};
+		50DF4E312095990A007EAF54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50DF4E3820959956007EAF54 /* libsqlite3.0.tbd */,
+				50DF4E3620959936007EAF54 /* libsqlite3.tbd */,
+				50DF4E342095991B007EAF54 /* AVKit.framework */,
+				50DF4E322095990A007EAF54 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		505F604B20956D44002BE80C /* Steve's Krazy Sub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505F607420956D44002BE80C /* Build configuration list for PBXNativeTarget "Steve's Krazy Sub" */;
+			buildPhases = (
+				505F604820956D44002BE80C /* Sources */,
+				505F604920956D44002BE80C /* Frameworks */,
+				505F604A20956D44002BE80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Steve's Krazy Sub";
+			productName = "Steve's Krazy Sub";
+			productReference = 505F604C20956D44002BE80C /* Steve's Krazy Sub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		505F605F20956D44002BE80C /* Steve's Krazy SubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505F607720956D44002BE80C /* Build configuration list for PBXNativeTarget "Steve's Krazy SubTests" */;
+			buildPhases = (
+				505F605C20956D44002BE80C /* Sources */,
+				505F605D20956D44002BE80C /* Frameworks */,
+				505F605E20956D44002BE80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505F606220956D44002BE80C /* PBXTargetDependency */,
+			);
+			name = "Steve's Krazy SubTests";
+			productName = "Steve's Krazy SubTests";
+			productReference = 505F606020956D44002BE80C /* Steve's Krazy SubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		505F606A20956D44002BE80C /* Steve's Krazy SubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505F607A20956D44002BE80C /* Build configuration list for PBXNativeTarget "Steve's Krazy SubUITests" */;
+			buildPhases = (
+				505F606720956D44002BE80C /* Sources */,
+				505F606820956D44002BE80C /* Frameworks */,
+				505F606920956D44002BE80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505F606D20956D44002BE80C /* PBXTargetDependency */,
+			);
+			name = "Steve's Krazy SubUITests";
+			productName = "Steve's Krazy SubUITests";
+			productReference = 505F606B20956D44002BE80C /* Steve's Krazy SubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		505F604420956D44002BE80C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Max Gerasymenko";
+				TargetAttributes = {
+					505F604B20956D44002BE80C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					505F605F20956D44002BE80C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 505F604B20956D44002BE80C;
+					};
+					505F606A20956D44002BE80C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 505F604B20956D44002BE80C;
+					};
+				};
+			};
+			buildConfigurationList = 505F604720956D44002BE80C /* Build configuration list for PBXProject "Steve's Krazy Sub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 505F604320956D44002BE80C;
+			productRefGroup = 505F604D20956D44002BE80C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				505F604B20956D44002BE80C /* Steve's Krazy Sub */,
+				505F605F20956D44002BE80C /* Steve's Krazy SubTests */,
+				505F606A20956D44002BE80C /* Steve's Krazy SubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505F604A20956D44002BE80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505F605A20956D44002BE80C /* LaunchScreen.storyboard in Resources */,
+				50DF4E2F20959791007EAF54 /* fmdb in Resources */,
+				505F605720956D44002BE80C /* Assets.xcassets in Resources */,
+				5053278520959F410068633E /* Info.plist in Resources */,
+				505F605520956D44002BE80C /* Main.storyboard in Resources */,
+				50FAB56F2095A97B00B9C9B8 /* FMDBDatabase.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505F605E20956D44002BE80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505F606920956D44002BE80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		505F604820956D44002BE80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505F6080209579A3002BE80C /* User.swift in Sources */,
+				5053278320959F410068633E /* FMDatabaseQueue.m in Sources */,
+				505F607E209578AC002BE80C /* SignUpViewController.swift in Sources */,
+				505F605220956D44002BE80C /* ViewController.swift in Sources */,
+				5053278020959F410068633E /* FMDatabase.m in Sources */,
+				5053278220959F410068633E /* FMDatabasePool.m in Sources */,
+				5053278420959F410068633E /* FMResultSet.m in Sources */,
+				50FAB5712095AAAD00B9C9B8 /* Util.swift in Sources */,
+				508D74082096C43A005B4718 /* SignInViewController.swift in Sources */,
+				50A668D720967BFE00BC5E77 /* SQLiteDatabase.swift in Sources */,
+				505F605020956D44002BE80C /* AppDelegate.swift in Sources */,
+				5053278120959F410068633E /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505F605C20956D44002BE80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505F606520956D44002BE80C /* Steve_s_Krazy_SubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505F606720956D44002BE80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505F607020956D44002BE80C /* Steve_s_Krazy_SubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		505F606220956D44002BE80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505F604B20956D44002BE80C /* Steve's Krazy Sub */;
+			targetProxy = 505F606120956D44002BE80C /* PBXContainerItemProxy */;
+		};
+		505F606D20956D44002BE80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505F604B20956D44002BE80C /* Steve's Krazy Sub */;
+			targetProxy = 505F606C20956D44002BE80C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		505F605320956D44002BE80C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505F605420956D44002BE80C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		505F605820956D44002BE80C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505F605920956D44002BE80C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		505F607220956D44002BE80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		505F607320956D44002BE80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		505F607520956D44002BE80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Steve's Krazy Sub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BYUI.Steve-s-Krazy-Sub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FMDBdatabase_sql.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		505F607620956D44002BE80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Steve's Krazy Sub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BYUI.Steve-s-Krazy-Sub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/FMDBdatabase_sql.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		505F607820956D44002BE80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Steve's Krazy SubTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BYUI.Steve-s-Krazy-SubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steve's Krazy Sub.app/Steve's Krazy Sub";
+			};
+			name = Debug;
+		};
+		505F607920956D44002BE80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Steve's Krazy SubTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BYUI.Steve-s-Krazy-SubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steve's Krazy Sub.app/Steve's Krazy Sub";
+			};
+			name = Release;
+		};
+		505F607B20956D44002BE80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Steve's Krazy SubUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BYUI.Steve-s-Krazy-SubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Steve's Krazy Sub";
+			};
+			name = Debug;
+		};
+		505F607C20956D44002BE80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Steve's Krazy SubUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BYUI.Steve-s-Krazy-SubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Steve's Krazy Sub";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		505F604720956D44002BE80C /* Build configuration list for PBXProject "Steve's Krazy Sub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505F607220956D44002BE80C /* Debug */,
+				505F607320956D44002BE80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505F607420956D44002BE80C /* Build configuration list for PBXNativeTarget "Steve's Krazy Sub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505F607520956D44002BE80C /* Debug */,
+				505F607620956D44002BE80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505F607720956D44002BE80C /* Build configuration list for PBXNativeTarget "Steve's Krazy SubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505F607820956D44002BE80C /* Debug */,
+				505F607920956D44002BE80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505F607A20956D44002BE80C /* Build configuration list for PBXNativeTarget "Steve's Krazy SubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505F607B20956D44002BE80C /* Debug */,
+				505F607C20956D44002BE80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 505F604420956D44002BE80C /* Project object */;
+}
